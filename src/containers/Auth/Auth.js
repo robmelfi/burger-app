@@ -45,7 +45,7 @@ class Auth extends Component {
     };
 
     componentDidMount () {
-        if (this.props.buildingBurder && this.props.authRedirectPath !== '/') {
+        if (!this.props.buildingBurger && this.props.authRedirectPath !== '/') {
             this.props.onSetAuthRedirectPath();
         }
     }
@@ -151,7 +151,7 @@ const mapStateToProps = state => {
       loading: state.auth.loading,
       error: state.auth.error,
       isAuthenticated: state.auth.token !== null,
-      buildingBurder: state.burgerBuilder.building,
+      buildingBurger: state.burgerBuilder.building,
       authRedirectPath: state.auth.authRedirectPath
   };
 };

@@ -1,6 +1,6 @@
 import React from 'readline';
 
-import { configure, shallow } from 'enzyme';
+import { configure, shallow, expect } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
 import NavigationItems from './NavigationItems';

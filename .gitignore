@@ -55,8 +55,14 @@ cmake-build-release/
 
 ## Plugin-specific files:
 
-# IntelliJ
-out/
+# WebStorm
+.idea/
+*.iml
+*.iws
+*.ipr
+*.ids
+*.orig
+
 
 # mpeltonen/sbt-idea plugin
 .idea_modules/
